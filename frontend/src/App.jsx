@@ -1,11 +1,18 @@
 import React from 'react'
+import { Routes,Route,BrowserRouter as Router} from 'react-router-dom'
+import RegisterCompany from './components/RegisterCompany'
 
 function App() {
   return (
-    <div>
-      Starting App
+    <div className="mainApp">
+    <Router>
+        <Routes>
+          <Route path="/registerCompany" element={ <RegisterCompany />}>
+          </Route>
+         </Routes>
+    </Router>
     </div>
   )
 }
 
-export default Appgit 
+export default App
