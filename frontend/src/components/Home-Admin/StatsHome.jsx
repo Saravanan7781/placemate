@@ -1,12 +1,8 @@
-import React from 'react'
-import './StatsHome.css'
+import React from 'react';
+import './StatsHome.css';
 
 function StatsHome() {
-  return (
-    <div className="StatsHomeMain">
-      StatsHome
-    </div>
-  )
+  return <div className="StatsHomeMain">StatsHome</div>;
 }
 
-export default StatsHome
+export default StatsHome;

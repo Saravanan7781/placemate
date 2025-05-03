@@ -1,6 +1,6 @@
-import React from 'react'
-import  './DashboardHome.css'
-import RealTimeDashboard from './RealTimeDashboard'
+import React from 'react';
+import './DashboardHome.css';
+import RealTimeDashboard from './RealTimeDashboard';
 
 function DashboardHome() {
   return (
@@ -10,14 +10,14 @@ function DashboardHome() {
           <p>Monitor your Placement Activities</p>
         </div>
         <div className="introToDashboardHomeSearch">
-          <input type="search" placeholder="Search"/>
+          <input type="search" placeholder="Search" />
         </div>
       </div>
       <div className="realDashboardStats">
-       <RealTimeDashboard />
+        <RealTimeDashboard />
       </div>
     </div>
-  )
+  );
 }
 
-export default DashboardHome
+export default DashboardHome;
