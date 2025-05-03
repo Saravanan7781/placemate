@@ -9,39 +9,38 @@ function RegisterCompany() {
               <h1>Add a company</h1>
             </div>
             <div className="RegisterCompanyDetails">
-
           <div className="RegisterCompanyDetails1">
               <div className="nameOfTheCompany inputsCompanyRegistration">
-                  <input type="text" placeholder="Name of the company" />
+                  <input type="text" placeholder="Name of the company" required/>
               </div>
               <div className="AboutTheCompany inputsCompanyRegistration">
-                  <textarea type="text" placeholder="About the company"/>
+                  <textarea type="text" placeholder="About the company" required/>
               </div>
               <div className="JobRoleOfTheCompany inputsCompanyRegistration"
               >
-                  <input type="text" placeholder="Job Role"/>
+                  <input type="text" placeholder="Job Role" required/>
                   
               </div>
               <div className="JobDescriptionOfTheCompany inputsCompanyRegistration">
-                  <textarea type="text" placeholder="Job Description" />
+                  <textarea type="text" placeholder="Job Description" required/>
               </div>
               <div className="CTCofTheCompany inputsCompanyRegistration">
-                  <input type="text" placeholder="CTC" />
+                  <input type="number" placeholder="CTC" required/>
                   
               </div> 
           </div>
           <div className="RegisterCompanyDetails2">
               <div className="InternshipStipendOfTheCompany inputsCompanyRegistration">
-                  <input type="text" placeholder="Internship Stipend"/>
+                  <input type="number" placeholder="Internship Stipend" required/>
               </div>
               <div className="RequiredSkillsOfTheCompany inputsCompanyRegistration">
-                  <textarea type="text" placeholder="Required Skills"/>
+                  <textarea type="text" placeholder="Required Skills" required/>
               </div>
               <div className="EligibleBranchesOfTheCompany inputsCompanyRegistration">
-                  <input type="text" placeholder="Eligible Branches"/>
+                  <input type="text" placeholder="Eligible Branches" required/>
               </div>
               <div className="EligibilityCriteriaOfTheCompany inputsCompanyRegistration">
-                  <input type="text" placeholder="Eligibility Criteria"/>
+                  <input type="text" placeholder="Eligibility Criteria" required/>
               </div>
 
             </div>
