@@ -1,13 +1,12 @@
-import React from 'react'
-import './CompanyLineupHome.css'
-import zoho from '../../assets/zoho.png' 
+import React from 'react';
+import './CompanyLineupHome.css';
+import zoho from '../../assets/zoho.png';
 
 function CompanyLineupHome() {
-
   return (
     <div className="CompanyLineupHomeMainContainer">
       <div className="CompanyLineupHomeCompanyImage">
-        <img src={ zoho} alt="" />
+        <img src={zoho} alt="" />
       </div>
       <div className="CompanyLineupHomeCompanies">
         <div className="CompanyLineupHomeCompanyImage"></div>
@@ -15,7 +14,7 @@ function CompanyLineupHome() {
         <div className="CompanyLineupHomeCompanyDate"></div>
       </div>
     </div>
-  )
+  );
 }
 
-export default CompanyLineupHome
+export default CompanyLineupHome;
