@@ -1,20 +1,68 @@
-.CompanyLineupHomeMainContainer{
+.CompanyLineupHomeMainContainer {
     height: 90%;
-    width: 90%;
-    border: 2px solid black;
+    width: 85%;
+    /* border: 2px solid black; */
 }
 
-.CompanyLineupHomeCompanyImage{
-    height: 40%;
+.CompanyLineupHomeCompanyImage {
+    height: 35%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-.CompanyLineupHomeCompanyImage img{
+.CompanyLineupHomeCompanyImage img {
     height: 100%;
     width: 90%;
+    object-fit: contain;
+}
+
+.CompanyLineupHomeCompanies {
+    height: 25%;
+    width: 100%;
+    /* border: 2px solid black; */
+    border-radius: 5ch;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompanyLineupHomeFilter {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompanyLineupCompaniesList {
+    height: 60%;
+    width: 100%;
+    overflow-y: scroll;
+    /* border: 1px solid gold; */
+}
+
+.CompanyLineupHomeSpecificCompany {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CompanyLineupHomeCompanyLineupImage {
+    height: 83%;
+    width: 20%;
+    padding: 2%;
+    /* border: 1px solid red; */
+    border-radius: 30%;
+}
+
+.CompanyLineupHomeCompanyLineupImage img {
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }

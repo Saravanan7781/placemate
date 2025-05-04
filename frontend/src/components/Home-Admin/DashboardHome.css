@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.dashboardHomeMain{
+.dashboardHomeMain {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 60%;
     width: 100%;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
 }
 
-.introToDashboardHome{
+.introToDashboardHome {
     height: 35%;
-    width: 90%;
+    width: 100%;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-.introToDashboardHomeHeading{
+.introToDashboardHomeHeading {
     width: 65%;
     height: 100%;
     font-size: 2.3rem;
@@ -28,7 +28,7 @@
     font-style: normal;
 }
 
-.introToDashboardHomeSearch{
+.introToDashboardHomeSearch {
     width: 35%;
     height: 100%;
     display: flex;
@@ -36,7 +36,7 @@
     justify-content: center;
 }
 
-.introToDashboardHomeSearch input{
+.introToDashboardHomeSearch input {
     height: 20%;
     width: 80%;
     border-radius: .9ch;
@@ -46,16 +46,16 @@
     font-family: poppins;
 }
 
-.introToDashboardHomeSearch input::placeholder{
+.introToDashboardHomeSearch input::placeholder {
     font-weight: 300;
     font-size: .75rem;
 }
 
-.realDashboardStats{
+.realDashboardStats {
     height: 65%;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
