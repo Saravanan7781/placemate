@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.dashboardHomeMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 100%;
+    border: 2px solid violet;
+}
+
+.introToDashboardHome {
+    height: 35%;
+    width: 90%;
+    display: flex;
+    border: 1px solid black;
+}
+
+.introToDashboardHomeHeading {
+    width: 65%;
+    height: 100%;
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introToDashboardHomeSearch {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introToDashboardHomeSearch input {
+    height: 20%;
+    width: 80%;
+    border-radius: .9ch;
+    border: 1px solid black;
+    outline: none;
+    padding: 3%;
+    font-family: poppins;
+}
+
+.introToDashboardHomeSearch input::placeholder {
+    font-weight: 300;
+    font-size: .75rem;
+}
+
+.realDashboardStats {
+    height: 65%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid blue;
+}

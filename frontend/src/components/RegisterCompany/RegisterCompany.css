@@ -48,11 +48,13 @@
     justify-content: center;
 }
 
-.AboutTheCompany, .JobDescriptionOfTheCompany, .RequiredSkillsOfTheCompany{
+.AboutTheCompany,
+.JobDescriptionOfTheCompany,
+.RequiredSkillsOfTheCompany {
     height: 20%;
 }
 
-.inputsCompanyRegistration input{
+.inputsCompanyRegistration input {
     height: 50%;
     width: 90%;
     padding: 4%;
@@ -61,10 +63,10 @@
     font-size: 1rem;
 }
 
-.inputsCompanyRegistration textarea{
+.inputsCompanyRegistration textarea {
     height: 100%;
     width: 90%;
-    padding: 2% ;
+    padding: 2%;
     font-size: 1rem;
     resize: none;
     border-radius: .6ch;
@@ -74,7 +76,7 @@
     outline: none;
 }
 
-.inputsCompanyRegistration textarea:focus{
+.inputsCompanyRegistration textarea:focus {
     outline: none;
 }
 

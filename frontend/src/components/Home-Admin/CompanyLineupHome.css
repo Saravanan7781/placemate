@@ -1,0 +1,20 @@
+.CompanyLineupHomeMainContainer {
+    height: 90%;
+    width: 90%;
+    border: 2px solid black;
+}
+
+.CompanyLineupHomeCompanyImage {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.CompanyLineupHomeCompanyImage img {
+    height: 100%;
+    width: 90%;
+    object-fit: contain;
+}

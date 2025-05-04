@@ -1,0 +1,29 @@
+.homeMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80vw;
+    /* background-color: black; */
+    border: 3px solid red;
+}
+
+.homeSubContainerLeft {
+    height: 90%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid green;
+}
+
+.homeSubContainerRight {
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+}
