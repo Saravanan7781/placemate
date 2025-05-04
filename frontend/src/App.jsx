@@ -1,8 +1,8 @@
-
-import React from 'react'
-import { Routes,Route,BrowserRouter as Router} from 'react-router-dom'
-import RegisterCompany from './components/RegisterCompany/RegisterCompany'
-import Home from './pages/Home'
+import React from 'react';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import RegisterCompany from './components/RegisterCompany/RegisterCompany';
+import Home from './pages/Home';
+import Login from './pages/Login';
 import LandingPage from './pages/LandingPage';
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <div className="mainApp">
       <Router>
         <Routes>
-
-          <Route path="/registerCompany" element={ <RegisterCompany />}></Route>
-          <Route path="/home" element={<Home/> }></Route>
+          <Route path="/registerCompany" element={<RegisterCompany />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<LandingPage/> }></Route>
          </Routes>
     </Router>
