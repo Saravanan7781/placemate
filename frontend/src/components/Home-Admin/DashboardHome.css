@@ -7,14 +7,14 @@
     justify-content: space-between;
     height: 60%;
     width: 100%;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
 }
 
 .introToDashboardHome {
     height: 35%;
-    width: 90%;
+    width: 100%;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .introToDashboardHomeHeading {
@@ -53,9 +53,9 @@
 
 .realDashboardStats {
     height: 65%;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
