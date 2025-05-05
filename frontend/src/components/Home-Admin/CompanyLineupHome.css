@@ -10,7 +10,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid red; */
+    background: linear-gradient(145deg, rgba(243, 207, 255, 1) 29%, rgba(234, 171, 255, 1) 60%, rgba(198, 213, 255, 1) 100%);
+    border: 1px solid transparent;
+    border-radius: 2.7ch;
 }
 
 .CompanyLineupHomeCompanyImage img {

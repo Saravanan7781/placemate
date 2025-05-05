@@ -1,0 +1,106 @@
+.mainSidebarOuter{
+    height: 100vh;
+    width:  10vw;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    transition: all .2s ease-in-out;
+    border-top-right-radius: 2ch;
+    border-bottom-right-radius: 1.2ch;
+}
+
+.mainSidebarOuterShow {
+    width: 4vw;
+}
+
+
+.mainSidebarInnerMenu{
+    height: 85%;
+    width: 4vw;
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.sidebarFirstPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    width: 80%;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    /* background-color: red; */
+}
+
+.sidebarFirstPart:hover{
+    background-color: gray;
+    cursor: pointer;    
+}
+
+.sidebarFirstPart svg{
+    color: white;
+}
+
+.sidebarFirstPart:hover{
+    cursor: pointer;
+}
+
+.sidebarSecondPart{
+    height: 50%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebarSecondPartItem{
+    height: 15%;
+    width: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    color: white;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+}
+
+.sidebarSecondPartItem:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.sidebarThirdPart{
+    height: 20%;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarThirdPartItem1{
+    height: 40%;
+    width: 80%;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    transition: all .2s ease-in-out;
+}
+
+.sidebarThirdPartItem1:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
