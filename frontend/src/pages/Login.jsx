@@ -3,7 +3,7 @@ import './Login.css'
 import { useState } from 'react';
 import {User,Lock} from 'lucide-react'; 
 import loginPageImage from '../assets/loginPageImage.jpg'
-import GoogleSignInButton from './GoogleSignInButton'
+import GoogleSignInButton from '../components/Login/GoogleSignInButton'
 const Login = () => {
   const [email,setEmail] = useState('');
   return (
