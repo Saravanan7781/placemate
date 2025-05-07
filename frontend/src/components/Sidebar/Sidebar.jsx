@@ -18,7 +18,7 @@ function Sidebar() {
           <Target size={32} />
         </div>
         <div className="sidebarSecondPart">
-          <div className="sidebarSecondPartItem sidebarSecondPartItem1">
+          <div className="sidebarSecondP*artItem sidebarSecondPartItem1">
             <Inbox size={28} />
           </div>
           <div className="sidebarSecondPartItem sidebarSecondPartItem2">
