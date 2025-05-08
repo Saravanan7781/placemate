@@ -1,0 +1,33 @@
+.PartBRegisterComponent{
+    height: 80%;
+    width: 80%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PartBInnerComponent{
+    height: 55%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+.PartBRegisterComponentFormInput{
+    height: 13%;
+    width: 55%;
+}
+
+.PartBRegisterComponentFormInput input{
+    height: 100%;
+    width: 100%;
+    padding-left: .3vw; 
+}
+
+.PartBRegisterComponentFormInput input:focus{
+    outline: none;
+}
