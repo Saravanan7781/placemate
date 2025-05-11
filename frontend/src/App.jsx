@@ -6,12 +6,14 @@ import Login from './pages/Login';
 import LandingPage from './pages/LandingPage';
 import Sidebar from './components/Sidebar/Sidebar';
 import Register from './pages/Register';
+import Chatbot from './pages/Chatbot';
 
 function App() {
   return (
     <div className="mainApp">
       <Router>
         <Sidebar />
+        <Chatbot />
         <Routes>
           <Route path="/registerCompany" element={<RegisterCompany />}></Route>
           <Route path="/home" element={<Home />}></Route>
