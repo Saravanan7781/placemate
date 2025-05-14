@@ -10,6 +10,7 @@
     transition: all .2s ease-in-out;
     border-top-right-radius: 2ch;
     border-bottom-right-radius: 1.2ch;
+    z-index: 9;
 }
 
 .mainSidebarOuterShow {

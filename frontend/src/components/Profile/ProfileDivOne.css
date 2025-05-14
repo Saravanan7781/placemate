@@ -1,0 +1,49 @@
+.profileDiv1MainPicture{
+    height: 45%;
+    width: 75%;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.profileDiv1MainPicture img{
+    height: 100%;
+    width: 100%;
+}
+
+.profileDiv1Data{
+    height: 45%;
+    width: 90%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profileDiv1Datum{
+    height: 20%;
+    width: 100%;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    align-items: center;
+}
+
+.profileDiv1DataQues{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid purple;
+}
+
+.profileDiv1DataAns{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
