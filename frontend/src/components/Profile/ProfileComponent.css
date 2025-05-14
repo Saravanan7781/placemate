@@ -1,0 +1,38 @@
+.mainProfileComponent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.mainProfileDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 85%;
+    width: 30%;
+}
+
+.mainProfileDiv2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid blue;
+    height: 95%;
+    width: 40%;
+}
+
+.mainProfileDiv3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid violet;
+    height: 95%;
+    width: 30%;
+}
