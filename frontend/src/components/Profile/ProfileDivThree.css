@@ -1,0 +1,49 @@
+.profileDivThreeInfos{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.profileDivThreePlacementStats{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
+}
+
+.profileDivThreePlacementStatsAttended,
+.profileDivThreePlacementStatsPercentage {
+    height: 80%;
+    width: 45%;
+    border: 2px solid darkgreen;
+}
+
+.profileDivThreeAttendedCompanies {
+    height: 70%;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.profileDivThreeAttendedCompaniesHeading {
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.profileDivThreeAttendedCompaniesList {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}

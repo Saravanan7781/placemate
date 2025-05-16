@@ -16,8 +16,8 @@
 }
 
 .CompanyLineupHomeCompanyImage img {
-    height: 100%;
-    width: 90%;
+    height: 60%;
+    width: 50%;
     object-fit: contain;
 }
 

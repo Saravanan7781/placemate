@@ -1,17 +1,25 @@
-.profileDiv1MainPicture{
-    height: 45%;
-    width: 75%;
-    background-color: black;
+.profileDiv1MainPicture {
+    height: 27%;
+    width: 47%;
+    /* background-color: black; */
     border-radius: 50%;
+    border: 2px solid rgb(154, 152, 152);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.profileDiv1MainPicture img{
-    height: 100%;
-    width: 100%;
+.profileDiv1MainPicture img {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+
 }
 
-.profileDiv1Data{
-    height: 45%;
+.profileDiv1Data {
+    height: 65%;
     width: 90%;
     border: 1px solid red;
     display: flex;
@@ -20,15 +28,16 @@
     justify-content: space-around;
 }
 
-.profileDiv1Datum{
-    height: 20%;
+.profileDiv1Datum {
+    height: 15%;
     width: 100%;
     border: 2px solid rebeccapurple;
     display: flex;
     align-items: center;
+    border-radius: 1rem;
 }
 
-.profileDiv1DataQues{
+.profileDiv1DataQues {
     height: 100%;
     width: 35%;
     display: flex;
@@ -37,13 +46,54 @@
     border: 1px solid purple;
 }
 
-.profileDiv1DataAns{
+.profileDiv1DataAns {
     height: 100%;
     width: 65%;
     display: flex;
     align-items: center;
     overflow-x: scroll;
 }
+
 ::-webkit-scrollbar {
     display: none;
+}
+
+.profileDiv1Data10thSchoolMark,
+.profileDiv1Data12thSchoolMark,
+.profileDiv1DataCurrentArrear,
+.profileDiv1DataHistoryOfArrears {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid violet;
+}
+
+.profileDiv1DataCurrentArrear,
+.profileDiv1DataHistoryOfArrears{
+    width: 40%;
+}
+
+.profileDiv1DataSchoolMarks,
+.profileDiv1DataArrears  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profileDiv1Data10thSchoolMarkQues,
+.profileDiv1Data12thSchoolMarkQues,
+.profileDiv1DataCurrentArrearQues,
+.profileDiv1DataHistoryOfArrearsQues {
+    color: rgb(110, 109, 109);
+}
+
+.profileDiv1Data12thSchoolMarkAns,
+.profileDiv1Data10thSchoolMarkAns,
+.profileDiv1DataCurrentArrearAns,
+.profileDiv1DataHistoryOfArrearsAns {
+    font-size: 1.3rem;
+    /* letter-spacing: .25ch; */
 }

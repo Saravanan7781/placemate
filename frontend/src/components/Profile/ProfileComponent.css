@@ -13,7 +13,7 @@
     justify-content: space-around;
     flex-direction: column;
     border: 1px solid red;
-    height: 85%;
+    height: 90%;
     width: 30%;
 }
 
@@ -24,15 +24,15 @@
     flex-direction: column;
     border: 1px solid blue;
     height: 95%;
-    width: 40%;
+    width: 35%;
 }
 
 .mainProfileDiv3 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     border: 1px solid violet;
     height: 95%;
-    width: 30%;
+    width: 35%;
 }
