@@ -1,0 +1,73 @@
+.profileDivTwoCustomizableInfos{
+    height: 35%;
+    width: 100%;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* background-color: black; */
+}
+
+.profileDivTwoRegisteredCompanies{
+    height: 60%;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.profileDivTwoCustomizableInfosContact,.profileDivTwoCustomizableInfosResume{
+    height: 40%;
+    width: 90%;
+    border: 2px solid darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profileDivTwoCustomizableInfosContactEmail, .profileDivTwoCustomizableInfosContactPhone{
+    height: 70%;
+    width: 45%;
+    border: 2px solid darkgreen;
+}
+
+.profileDivTwoCustomizableInfosResumeInput{
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: .6rem;
+}
+
+.profileDivTwoRegisteredCompaniesHeading{
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.profileDivTwoRegisteredCompaniesList{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.profileDivTwoCustomizableInfosContactEmailQues{
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid black; */
+    /* margin-block-end: 1em; */
+}
+
+.profileDivTwoCustomizableInfosContactEmailAns{
+    overflow-x: scroll;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* justify-content: center; */
+    /* font-size: 1.1rem; */
+}
