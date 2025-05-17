@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import './CompanyLineupHome.css';
-import zoho from '../../assets/zoho.png';
+
+import zoho from '../../assets/companyImages/zoho.png';
+import paytm from '../../assets/companyImages/paytm.png'
+import apple from '../../assets/companyImages/apple.png'
+import samsung from '../../assets/companyImages/samsung.png';
+import amazon from '../../assets/companyImages/amazon.png';
+
 import LineUp from './LineUp';
 
-function CompanyLineupHome() {
-  const data = [
+function CompanyLineupHome({ data}) {
+  const sampleData = [
     {
       name: 'Zoho',
       img: zoho,
@@ -36,8 +42,10 @@ function CompanyLineupHome() {
 
   return (
     <div className="CompanyLineupHomeMainContainer">
-      <div className="CompanyLineupHomeCompanyImage">
-        <img src={zoho} alt="" />
+      <div className="CompanyLineupHomeCompanyImageWrapper">
+        <div className="CompanyLineupHomeCompanyImage">
+          <img src={zoho} alt="" />
+        </div>
       </div>
       <div className="CompanyLineupHomeFilter">
         <div className="CompanyLineupHomeFilterText">
@@ -45,7 +53,7 @@ function CompanyLineupHome() {
         </div>
       </div>
       <div className="CompanyLineupCompaniesList">
-        {data.map((datum, index) => (
+        {(data !== undefined ? data : sampleData).map((datum, index) => (
           <LineUp
             data={datum}
             key={index}

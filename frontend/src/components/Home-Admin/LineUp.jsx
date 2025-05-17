@@ -1,5 +1,5 @@
 import React from 'react';
-import zoho from '../../assets/zoho.png';
+import zoho from '../../assets/companyImages/zoho.png';
 
 function LineUp({ data, index, selectedIndex, setSelectedIndex }) {
   const toggleColor = {

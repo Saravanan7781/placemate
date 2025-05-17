@@ -4,8 +4,16 @@
     /* border: 2px solid black; */
 }
 
-.CompanyLineupHomeCompanyImage {
+.CompanyLineupHomeCompanyImageWrapper {
     height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompanyLineupHomeCompanyImage {
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
