@@ -1,10 +1,10 @@
 .profileDivThreeInfos{
-    height: 25%;
+    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .profileDivThreePlacementStats{
@@ -13,20 +13,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .profileDivThreePlacementStatsAttended,
 .profileDivThreePlacementStatsPercentage {
-    height: 80%;
+    height: 90%;
     width: 45%;
-    border: 2px solid darkgreen;
+    border: 2px solid black;
 }
 
 .profileDivThreeAttendedCompanies {
     height: 70%;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .profileDivThreeAttendedCompaniesHeading {
@@ -43,7 +43,37 @@
     height: 90%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: space-around; */
     overflow: scroll;
 }
+
+.profileDivThreePlacementStatsAttended,.profileDivThreePlacementStatsPercentage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.profileDivThreePlacementStatsAttendedQues,.profileDivThreePlacementStatsAttendedAns,
+.profileDivThreePlacementStatsPercentageQues,
+.profileDivThreePlacementStatsPercentageAns
+{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+}
+
+.profileDivThreePlacementStatsAttendedAns,
+.profileDivThreePlacementStatsPercentageAns{
+    font-size: 1.4rem;
+}
+
+
+/* .profileDivThreePlacementStatsAttendedQues p{
+    height: 100%;
+} */

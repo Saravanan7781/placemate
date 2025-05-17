@@ -21,7 +21,7 @@
 .profileDiv1Data {
     height: 65%;
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
 }
 
 .profileDiv1DataAns {
@@ -68,7 +68,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
 }
 
 .profileDiv1DataCurrentArrear,

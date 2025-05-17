@@ -20,7 +20,7 @@
 .mainProfileDiv2 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     border: 1px solid blue;
     height: 95%;
@@ -30,7 +30,7 @@
 .mainProfileDiv3 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     border: 1px solid violet;
     height: 95%;
