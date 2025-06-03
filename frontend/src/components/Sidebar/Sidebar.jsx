@@ -67,6 +67,9 @@ function Sidebar() {
           <div className="sidebarThirdPartItem1">
             <UserRoundPen />
           </div>
+          <div className="sidebarThirdPartItem2">
+            <p>Profile</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-.mainProfileComponent{
+.mainProfileComponent {
     height: 100%;
     width: 100%;
     display: flex;
@@ -12,9 +12,12 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    border: 1px solid red;
+    border: 1.5px solid black;
     height: 90%;
     width: 30%;
+    border-right: none;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
 }
 
 .mainProfileDiv2 {
@@ -22,9 +25,12 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid blue;
+    border: 1px solid black;
     height: 95%;
     width: 35%;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    border-right:none;
 }
 
 .mainProfileDiv3 {
@@ -32,7 +38,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid violet;
+    border: 1px solid black;
     height: 95%;
     width: 35%;
+    border-top-right-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
 }

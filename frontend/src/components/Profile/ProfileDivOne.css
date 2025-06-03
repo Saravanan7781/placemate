@@ -31,7 +31,8 @@
 .profileDiv1Datum {
     height: 15%;
     width: 100%;
-    border: 2px solid rebeccapurple;
+    border: 2px solid black;
+    padding: 2%;
     display: flex;
     align-items: center;
     border-radius: 1rem;
