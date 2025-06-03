@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.chatbotLogo {
+    height: 9vh;
+    width: 9vh;
+    border: 2px solid rgb(222, 222, 222);
+    background-color: white;
+    position: absolute;
+    right: 4.5%;
+    bottom: 4.5%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 10px #ffffff;
+}
+
+.mainChatbotComponent {
+    transition: all .4s ease-in-out;
+    height: 55vh;
+    width: 38vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    border-radius: 1.5ch;
+    display: block;
+    z-index: 1;
+    background-color: #6f36ff30;
+    backdrop-filter: blur(10px);
+}
+
+.mainChatbotComponentHeading {
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+    height: 12%;
+    color: white;
+}
+
+.mainChatbotComponentBody {
+    height: 88%;
+    /* border: 4px solid firebrick; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainChatbotComponentConversation {
+    height: 85%;
+    width: 98%;
+    /* border: 2px solid black; */
+}
+
+.mainChatbotComponentInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 15%;
+    
+    /* border: 2px solid violet; */
+}
+
+.mainChatbotComponentInput textarea {
+    height: 70%;
+    width: 90%;
+    padding: .4rem;
+    font-size: .9rem;
+    /* border: 1px solid black; */
+    border-right: none;
+    border-radius: .5rem;
+    resize: none;
+}
+
+.mainChatbotComponentInput textarea:focus {
+    outline: none;
+}
+
+.mainChatbotComponentSendButton {
+    all: unset;
+    height: 100%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+
+.chatMessage {
+    margin: 0.3rem;
+    padding: .3rem 0.9rem;
+    border-radius: .4rem;
+    max-width: 90%;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+}
+
+.userMessage {
+    background-color: #aadeff;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.botMessage {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.mainChatbotComponentConversation {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 0.5rem;
+    height: 90%;
+    width: 98%;
+    /* border: 2px solid black; */
+}
