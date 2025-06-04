@@ -19,14 +19,13 @@ const Login = () => {
   const handleLogin = async (login_type = null,em) => {
       setEmailError(false);
       setPasswordError(false);
-      setEmail(em)
       console.log(`loginType:${login_type} email:${em}`);
      if(!em){
          setEmailError(true);
          return;
         }
       if(login_type!=="oauth" && !password){
-           setPasswordError(true);
+          setPasswordError(true);
            return;
         }
       try {
@@ -99,7 +98,7 @@ const Login = () => {
                     }}
                   />
                 </div>
-                <button onClick={() => handleLogin()}>Login</button>
+                <button onClick={() => handleLogin(null,email)}>Login</button>
                 <p>or</p>
                 <div className="googleSignIn">
                   <GoogleSignInButton setEmail={setEmail} handleLogin={handleLogin} />
