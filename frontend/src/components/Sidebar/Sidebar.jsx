@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Sidebar/Sidebar.css';
-import { Target, Inbox, UserRoundPen } from 'lucide-react';
+import { Target, Inbox, LogOut } from 'lucide-react';
 
 function Sidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -47,7 +47,7 @@ function Sidebar() {
                 showSidebar ? `sidebarSecondPartSecondOneParaShow` : ``
               }`}
             >
-              <p>Inbox</p>
+              <p>User creation</p>
             </div>
           </div>
           <div className="sidebarSecondPartThirdOne">
@@ -59,16 +59,23 @@ function Sidebar() {
                 showSidebar ? `sidebarSecondPartThirdOneParaShow` : ``
               }`}
             >
-              <p>Settings</p>
+              <p>Companies</p>
             </div>
           </div>
         </div>
         <div className="sidebarThirdPart">
-          <div className="sidebarThirdPartItem1">
-            <UserRoundPen />
-          </div>
-          <div className="sidebarThirdPartItem2">
-            <p>Profile</p>
+          <div className="sidebarThirdPartFirstOne">
+            <div className="sidebarThirdPartItem1">
+              <LogOut />
+            </div>
+            <div
+              className={`sidebarThirdPartFirstOnePara ${
+                showSidebar ? `sidebarThirdPartFirstOneParaShow` : ``
+              }`}
+            >
+              {/* For students profile, for admins logout */}
+              <p>Logout</p>
+            </div>
           </div>
         </div>
       </div>
