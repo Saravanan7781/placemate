@@ -50,17 +50,20 @@
     color: rgb(45, 0, 159);
     transition: 200ms;
 }
-.landing .body{
+.landing>.body{
     width: 100%;
     height: 100%;
-    margin-top: 52px;
+    margin-top: 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    /* justify-content: center; */
+
 }
 .landing .body .sec1{
     width: 90%;
-    height: 600px;
+    height: 100vh;
     /* border: solid 2px rgb(0, 0, 0); */
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -80,6 +83,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-top: 100px;
 }
 /* .landing .body .sec1 .right .blob1{
     width: 600px;
@@ -191,7 +195,135 @@
     transition: 200ms;
 }
 
+.landing .sec{
+    width: 90%;
+    height: 150rem;
+    margin-top: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img ctn";
+}
+.landing .sec3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ctn img";
+}
+.landing .sec .image{
+    grid-area: img;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
+}
+.landing .sec .image .blur3{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px 100px#6f36ff40;
+    background-color: #6f36ff40;
+    scale: 4;
+    z-index: -10;
+}
+.landing .sec .image img{
+    width: 400px;
+    transition: 500ms;
+    filter: blur(px);
+}
+.landing .sec3 .image img{
+    width: 600px;
+}
+.landing .sec .ctn2{
+    grid-area: ctn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing .sec .ctn2 .table{
+    width: 70%;
+    height: 120%;
+    background-color: #6f36ff;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.263);
+}
+.landing .sec .ctn2 .table .title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.landing .sec .ctn2 .table .title p{
+    font-size: 1.8rem;
+    font-family: 'poppins' ,sans-serif;
+    font-weight: 600;
+    /* border-bottom: solid 1px white; */
+
+
+}
+.landing .sec .ctn2 .table .title:after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 10%;
+    border-radius: 2px;
+}
+.landing .sec .ctn2 .table .body{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.landing .sec .ctn2 .table .body .content{
+    width: 90%;
+    height: 90%;
+}
+.landing .sec .ctn2 .table .body .content .point{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.landing .sec .ctn2 .table .body .content .point .dot{
+    font-size: 30px;
+    width: 30px;
+}
+.landing .sec .ctn2 .table .body .content .point p{
+    width: calc(100% - 30px);
+}
+
+.landing .line1{
+    width: 100vh;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 15%;
+}
+.landing .line3{
+    width: 100vh;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -90%;
+}
+
+.landing .sec4{
+    height: 200px;
+    width: 1px;
+}
 
 
 
@@ -200,16 +332,19 @@
 
 
 .landing .blur1{
-    position: absolute;
-    width: 100px;
-    height: 100px;
+    /* position: absolute; */
+    width: 0px;
+    height: 0px;
     border-radius: 50px;
     box-shadow: 0px 0px 100px 100px#6f36ff30;
     background-color: #6f36ff30;
-    scale: 5;
+    scale: 7;
     z-index: -10;
 }
 @media only screen and (max-width:700px){
+    .landing .body{
+        margin-top: 50px;
+    }
     .landing .body .sec1{
         height: 800px;
         grid-template-areas: 
@@ -218,6 +353,9 @@
         grid-template-rows: 0.7fr 1fr;
         grid-template-columns: 1fr;
         
+    }
+    .landing .body .sec1 .right{
+        margin-top: 100px;
     }
     .landing .body .sec1 .left .stn1{
         top: 0rem;
@@ -235,6 +373,49 @@
         width: 400px;
         height: 400px;
     }
+
+    .landing .line1{
+        bottom: 0;
+        width: 80%;
+    }
+    .landing .line3{
+        bottom: -110%;
+        width: 80%;
+    }
+
+    .landing .sec{
+        height: 800px;
+        grid-template-areas: 
+        "img"
+        "ctn";
+        grid-template-rows: 0.7fr 1fr;
+        grid-template-columns: 1fr;
+        margin-top: 200px;
+    }
+    .landing .sec2 .image img{
+        width: 300px;
+    }
+    .landing .sec3 .image img{
+        width: 400px;
+    }
+    .landing .sec .ctn2 .table{
+        margin-top: 20px;
+        width: 100%;
+        height: 600px;
+    }
+     .landing .sec3 .ctn2 .table{
+        margin-top: 20px;
+        width: 90%;
+        height: 600px;
+    }
+    .landing .sec .ctn2 .table .body .content{
+        height: 550px;
+    }
+    .landing .sec .ctn2 .table .body .content .point{
+        margin-top: 30px;
+    }
+
+
     .landing .nav .navtext{
         display: none;
     }
