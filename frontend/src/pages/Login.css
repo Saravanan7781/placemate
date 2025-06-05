@@ -60,6 +60,34 @@
     width: 100%;
     font-size: 14px;
 }
+.LoginUserInp:hover{
+    border: 1px solid blue;
+}
+.error-border{
+    border: 1px solid red;
+}
+.login-error-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336; /* red */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  z-index: 1000;
+  animation: fadeInOut 1.5s ease-in-out;
+  width:400px;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
 .LoginContent  button{
      height: 10%;
      padding: 5px;
