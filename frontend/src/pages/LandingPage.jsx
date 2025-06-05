@@ -1,6 +1,7 @@
 import './LandingPages.css'
 import img1 from "../assets/landing-img1.png"
 import img2 from "../assets/landing-img2.png"
+import img3 from "../assets/landing-img3.png"
 import { useEffect, useState } from 'react';
 import { FaArrowRight } from "react-icons/fa6";
 import { PiDotOutlineFill } from "react-icons/pi";
@@ -82,6 +83,7 @@ function LandingPage() {
         <div className="landing">
             <div className="blur1"></div>
             <div className="blur2"></div>
+
             <div className="nav">
                 <div className="logo">
                     <p>PlaceMate</p>
@@ -116,8 +118,10 @@ function LandingPage() {
                         <img src={img1} alt="image" />
                     </div>
                 </div>
-                <div className="sec2">
+                <div className="line1"></div>
+                <div className="sec2 sec">
                     <div className="image">
+                        <div className="blur3"></div>
                         <img src={img2} alt="landing page img2" />
                     </div>
                     <div className="ctn2">
@@ -128,19 +132,19 @@ function LandingPage() {
                             <div className="body">
                                 <div className="content">
                                     <div className="point">
-                                        <PiDotOutlineFill className='dot'/>
+                                        <PiDotOutlineFill className='dot' />
                                         <p>Students can prepare for the next company with the help of interview experience provided by the students that cracked the interview</p>
                                     </div>
                                     <div className="point">
-                                        <PiDotOutlineFill className='dot'/>
+                                        <PiDotOutlineFill className='dot' />
                                         <p>Students can register for the next company with just 3 clicks</p>
                                     </div>
                                     <div className="point">
-                                        <PiDotOutlineFill className='dot'/>
+                                        <PiDotOutlineFill className='dot' />
                                         <p>Students can save multiple resume in the cloud storage to easy select for the company regeneration</p>
                                     </div>
                                     <div className="point">
-                                        <PiDotOutlineFill className='dot'/>
+                                        <PiDotOutlineFill className='dot' />
                                         <p>Students can prepare for the next company with the help of interview experience provided by the students that cracked the interview </p>
                                     </div>
                                 </div>
@@ -149,6 +153,42 @@ function LandingPage() {
                         </div>
                     </div>
                 </div>
+                <div className="line3"></div>
+                <div className="sec3 sec">
+                    <div className="image">
+                        <div className="blur3"></div>
+                        <img src={img3} alt="landing page img3" />
+                    </div>
+                    <div className="ctn2">
+                        <div className="table">
+                            <div className="title">
+                                <p>Placement Activity</p>
+                            </div>
+                            <div className="body">
+                                <div className="content">
+                                    <div className="point">
+                                        <PiDotOutlineFill className='dot' />
+                                        <p>Students can prepare for the next company with the help of interview experience provided by the students that cracked the interview </p>
+                                    </div>
+                                    <div className="point">
+                                        <PiDotOutlineFill className='dot' />
+                                        <p>Students can register for the next company with just 3 clicks</p>
+                                    </div>
+                                    <div className="point">
+                                        <PiDotOutlineFill className='dot' />
+                                        <p>Students can save multiple resume in the cloud storage to easy select for the company regeneration</p>
+                                    </div>
+                                    <div className="point">
+                                        <PiDotOutlineFill className='dot' />
+                                        <p>Students can prepare for the next company with the help of interview experience provided by the students that cracked the interview  </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="sec4"></div>
             </div>
         </div>
     )
