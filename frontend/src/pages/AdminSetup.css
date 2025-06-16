@@ -1,0 +1,51 @@
+.adminsetup{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EAE2FF;
+    display: flex;
+}
+.adminsetup .left{
+    width: 35%;
+    background-color: #6F36FF;
+
+
+    font-family: 'roboto',sans-serif;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adminsetup .left .logo{
+    width: 100%;
+    height: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4vh;
+}
+.adminsetup .left .text{
+    margin-top: 10vh;
+    width: 90%;
+}
+.adminsetup .left .text .head{
+    font-size: 25px;
+    font-weight: 600;
+}
+.adminsetup .left .text .txt{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.adminsetup .left .img{
+    width: 90%;
+    margin-top: 10vh;
+}
+.adminsetup .left .img img{
+    width: 90%;
+}
+.adminsetup .right{
+    width: 65%;
+    height: 100%;
+}
