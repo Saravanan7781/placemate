@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Register from './pages/Register';
 import Chatbot from './pages/Chatbot';
 import Profile from './pages/Profile';
+import AllUsers from './pages/AllUsers';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
           <Route path="/home" element={<Home />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<LandingPage />}></Route>
-          <Route path="/register" element={<Register/>}></Route>
-          <Route path="/profile" element={<Profile/>}></Route>
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
+          <Route path="/users" element={<AllUsers />}></Route>
         </Routes>
       </Router>
     </div>
