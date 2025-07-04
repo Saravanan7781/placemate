@@ -6,6 +6,13 @@ import { VscLoading } from "react-icons/vsc";
 
 function FillDetails() {
 
+    //section values
+    const [workspaceName, setWorkspaceName] = useState("");
+    const [input1, setInput1] = useState("");
+    const [input2, setInput2] = useState("");
+    const [input3, setInput3] = useState("");
+    const [input4, setInput4] = useState("");
+
 
     // progress bar animation
     const [currentStep, setCurrentStep] = useState(0)
@@ -16,8 +23,19 @@ function FillDetails() {
         }
     }
     function handleNextClick() {
+
         if (currentStep < 2) {
-            setCurrentStep(currentStep + 1);
+            if (workspaceName === "" || input1 === "" || input2 === "" || input3 === "" || input4 === "") {
+                if (workspaceName === "") {
+                    const ele = document.getElementById("workspaceName")
+
+                    ele.style.border = "solid 2px red";
+                }
+            }
+            else {
+                setCurrentStep(currentStep + 1);
+            }
+
         }
     }
 
@@ -89,6 +107,8 @@ function FillDetails() {
 
     async function checkAvaiablity() {
 
+        const nameEle = document.getElementById("workspaceName")
+
 
         setisCheckLoading(1)
         setShowCheckBtn(0)
@@ -96,10 +116,15 @@ function FillDetails() {
         setTimeout(() => {
             setShowCheckBtn(0)
             setisCheckLoading(0)
-            setCheckMsgtext("WorkSpace name avaiable")
+            setCheckMsgtext("WorkSpace name available")
             setshowCheckMsg(1)
-            const ele_p = document.querySelector(".idMSG")
-            console.log(ele_p)
+
+            setTimeout(() => {
+                const ele_p = document.querySelector(".idMSG")
+                ele_p.style.color = "green";
+            }, 1);
+            nameEle.classList.add("greenh")
+
         }, 2000)
     }
 
@@ -141,12 +166,12 @@ function FillDetails() {
                             <div className="row1-ctn row">
                                 <div className="input-ctn">
                                     <div className="lable">WorkSpace Name</div>
-                                    <input type="text" placeholder='Workspace Name' />
+                                    <input id='workspaceName' type="text" placeholder='Workspace Name' onChange={(e) => { setWorkspaceName(e.target.value) }} />
                                 </div>
                                 <div className="checkbtn-ctn">
                                     {showCheckBtn ?
                                         <div className="namecheck-btn" onClick={() => { checkAvaiablity() }}>
-                                            <p>Check name avaiablity</p>
+                                            <p>Check name availablity</p>
                                         </div> : <></>}
 
                                     {showCheckMsg ?
@@ -166,21 +191,21 @@ function FillDetails() {
                             <div className="row2-ctn row">
                                 <div className="input-ctn">
                                     <div className="lable">college Name</div>
-                                    <input type="text" placeholder='College Name' />
+                                    <input type="text" placeholder='College Name' onChange={(e) => { setInput1(e.target.value) }} />
                                 </div>
                                 <div className="input-ctn">
                                     <div className="lable">Phone number</div>
-                                    <input type="text" placeholder='Phone number' />
+                                    <input type="text" placeholder='Phone number' onChange={(e) => { setInput2(e.target.value) }} />
                                 </div>
                             </div>
                             <div className="row3-ctn row">
                                 <div className="input-ctn">
                                     <div className="lable">Address</div>
-                                    <input type="text" placeholder='Address' />
+                                    <input type="text" placeholder='Address' onChange={(e) => { setInput3(e.target.value) }} />
                                 </div>
                                 <div className="input-ctn">
                                     <div className="lable">Phone number</div>
-                                    <input type="text" placeholder='Colloge Name' />
+                                    <input type="text" placeholder='Colloge Name' onChange={(e) => { setInput4(e.target.value) }} />
                                 </div>
                             </div>
                         </div>
