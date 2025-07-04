@@ -1,0 +1,146 @@
+.AllUsersSearchSection{
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: b;
+}
+
+.AllUsersList{
+    height: 80%;
+    width: 90%;
+}
+
+.AllUsersSectionSearchbar{
+    border: 1px solid black;
+    height: 5vh;
+    width: 60%;
+    border-radius: 1ch;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.AllUsersSectionSearchbar:focus{
+    outline: none;
+}
+
+.AllUsersSectionSearchbarFilter, .AllUsersSectionUserUpload{
+    height: 5vh;
+    background-color: white;
+    border: 1px solid black;
+    width: 12%;
+    border-radius: 1ch;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AllUsersSectionUserUpload{
+    width: 14%;
+}
+
+.AllUsersSectionUserUpload svg{
+    height: 50%;
+    color: rgb(18, 164, 18);
+}
+
+.AllUsersListMain{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr .5fr .8fr .2fr;
+    grid-auto-rows: 7vh;
+    grid-gap: 1rem;
+    border: 1.5px solid black;
+    border-radius: 1.2ch;
+    padding: 2%;
+    overflow-y: scroll;
+}
+
+
+.headingForGrid{
+    height: 7.5vh;
+    border: 2px solid black;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserListGridHeading6{
+    border: none;
+}
+
+.gridData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    font-size: 1.2rem;
+    height: 5vh;
+}
+
+.gridData5{
+    border: none;
+}
+
+
+.gridData5InnerStyle{
+    border: 1px solid red;
+    height: 90%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8ch;
+}
+
+.adminGridData5InnerStyle{
+    background-color: rgba(243, 64, 64, 0.251);
+    color: red;
+}
+
+.studentGridData5InnerStyle{
+    background-color: rgba(182, 255, 182, 0.158);
+    color: #00ff5e;
+    border-color: rgb(0, 255, 0);
+}
+
+.facultyGridData5InnerStyle {
+    background-color: rgba(255, 200, 48, 0.215);
+    color: rgb(255, 140, 0);
+    border-color: rgb(255, 214, 80);
+}
+
+
+.eyebtn{
+    border: none;
+}
+
+.eyeIcon{
+    height: 65%;
+    width: 60%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    color: black;
+    transition:all .5s ease-in-out;
+}
+
+.eyeIcon:hover{
+    background-color: rgb(179, 178, 178);
+    cursor: pointer;
+
+}
+
+.popupForProfileExpasion{
+    display: block;
+    position: absolute;
+    background-color: black;
+    height: 80%;
+    width: 80%;
+}
