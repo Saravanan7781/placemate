@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import LandingPage from './pages/LandingPage';
 import Sidebar from './components/Sidebar/Sidebar';
-import Register from './pages/Register';
+import AdminSetup from './pages/AdminSetup';
 import Chatbot from './pages/Chatbot';
 import Profile from './pages/Profile';
 import AllUsers from './pages/AllUsers';
@@ -14,16 +14,18 @@ function App() {
   return (
     <div className="mainApp">
       <Router>
-        <Sidebar />
-        <Chatbot />
+        
+
         <Routes>
-          <Route path="/registerCompany" element={<RegisterCompany />}></Route>
-          <Route path="/home" element={<Home />}></Route>
+          <Route path="/registerCompany" element={<><RegisterCompany /><Sidebar /></>}></Route>
+          <Route path="/home" element={<><Home /> <Sidebar /> <Chatbot /></>}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/register" element={<Register />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
           <Route path="/users" element={<AllUsers />}></Route>
+          <Route path="/setup" element={<AdminSetup/>}></Route>
+
         </Routes>
       </Router>
     </div>
