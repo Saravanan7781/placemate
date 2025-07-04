@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/setup" element={<AdminSetup/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
-        </Routes>
+      </Routes>
       </Router>
     </div>
   );

@@ -108,11 +108,17 @@
     left: calc(15% + 470px);
 }
 
+@keyframes fade{
+    0%{opacity: 0;scale: 0.95;}
+  100%{opacity: 1;scale: 1;}
+}
 
 .filld .top-ctn .progressBar .activec{
     background-color: #4800ff;
     box-shadow: 0px 0px 20px 1px #6f36ff67;
     transition: 200ms;
+    animation: fade 0.5s linear 1;
+
 }
 .filld .top-ctn .progressBar .activet{
     font-size: 20px;
@@ -203,7 +209,7 @@
     width: 90%;
 }
 
-.filld .body-ctn .details-ctn .inputarea-ctn .input-ctn input{
+.filld .body-ctn .details-ctn .inputarea-ctn .input-ctn input[type=text]{
     width: 90%;
     height: 40px;
     color: black;
@@ -214,15 +220,28 @@
 
 
 }
+
+
+.filld [type="text"]:focus {
+    outline: none;
+}
+.filld .body-ctn .details-ctn .inputarea-ctn .input-ctn input[type=text]:focus{
+    border: solid #4400f1 2px;
+}
 .filld .body-ctn .details-ctn .inputarea-ctn .row1-ctn .checkbtn-ctn{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 
 }
+
+.filld .body-ctn .details-ctn .inputarea-ctn .input-ctn .greenh{
+    border: solid 2px rgb(38, 182, 38) !important;
+}
+
 .filld .body-ctn .details-ctn .inputarea-ctn .row1-ctn .checkbtn-ctn .namecheck-btn{
     width: 200px;
     height: 30px;
