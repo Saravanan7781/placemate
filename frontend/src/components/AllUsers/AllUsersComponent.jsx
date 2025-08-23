@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './AllUsersComponent.css';
 import AllUsersList from './AllUsersList';
-import * as XLSX from 'xlsx';
+// import * as XLSX from 'xlsx';
 import { FileSpreadsheet } from 'lucide-react';
-import AllUsersProfileExpansion from './AllUsersProfileExpansion';
+// import AllUsersProfileExpansion from './AllUsersProfileExpansion';
 
 function AllUsersComponent() {
   const [users, setUsers] = useState([]);
