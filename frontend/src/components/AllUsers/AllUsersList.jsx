@@ -13,8 +13,8 @@ function AllUsersList({ users }) {
       <div className="headingForGrid UserListGridHeading6">{/* <Eye /> */}</div>
       {users.map((data, index) => (
         <React.Fragment key={index}>
-          <div className="gridData gridData1">{data.Name || 'N/A'}</div>
-          <div className="gridData gridData2">{data.regno || 'N/A'}</div>
+          <div className="gridData gridData1">{data.name || 'N/A'}</div>
+          <div className="gridData gridData2">{data.reg_no || 'N/A'}</div>
           <div className="gridData gridData3">{data.dept || 'N/A'}</div>
           <div className="gridData gridData4">{data.cgpa || 'N/A'}</div>
           <div className="gridData gridData5">

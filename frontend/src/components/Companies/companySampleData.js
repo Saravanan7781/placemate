@@ -1,0 +1,50 @@
+export const companySampleData = [
+  {
+    _id: '64a1f2c3e9b1a7d6f9c8a123',
+    name: 'Juspay',
+    logo: 'https://example.com/logos/juspay.png',
+    desc: 'Juspay provides payment solutions with focus on seamless user experience.',
+    location: 'Bangalore',
+    avg_stud_placed: [4, 12, 4],
+    avg_sal_package: [8, 10, 9], // in LPA
+    roles_offered: [
+      'Software Engineer',
+      'Backend Developer',
+      'Fullstack Developer',
+    ],
+  },
+  {
+    _id: '64a1f2c3e9b1a7d6f9c8a124',
+    name: 'Kaar Technologies',
+    logo: 'https://example.com/logos/kaar.png',
+    desc: 'Kaar Technologies is a global IT services and consulting company specializing in SAP.',
+    location: 'Chennai',
+    avg_stud_placed: [6, 10, 8],
+    avg_sal_package: [5, 6, 7],
+    roles_offered: [
+      'SAP Consultant',
+      'Associate Developer',
+      'Business Analyst',
+    ],
+  },
+  {
+    _id: '64a1f2c3e9b1a7d6f9c8a125',
+    name: 'Zoho',
+    logo: 'https://example.com/logos/zoho.png',
+    desc: 'Zoho provides cloud software and SaaS applications for businesses.',
+    location: 'Chennai',
+    avg_stud_placed: [15, 18, 20],
+    avg_sal_package: [6, 7, 6.5],
+    roles_offered: ['Software Engineer', 'UI Developer', 'QA Engineer'],
+  },
+  {
+    _id: '64a1f2c3e9b1a7d6f9c8a126',
+    name: 'Amazon',
+    logo: 'https://example.com/logos/amazon.png',
+    desc: 'Amazon is a multinational technology company focusing on e-commerce, cloud, and AI.',
+    location: 'Hyderabad',
+    avg_stud_placed: [10, 14, 12],
+    avg_sal_package: [25, 28, 30],
+    roles_offered: ['SDE 1', 'Cloud Engineer', 'Data Engineer'],
+  },
+];

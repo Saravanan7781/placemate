@@ -70,6 +70,7 @@
     font-size: 1rem;
     resize: none;
     border-radius: .6ch;
+    border: 1px solid black;
 }
 
 .inputsCompanyRegistration input:focus {
