@@ -6,6 +6,13 @@ import { VscLoading } from "react-icons/vsc";
 
 function FillDetails() {
 
+    //section values
+    const [workspaceName, setWorkspaceName] = useState("");
+    const [input1, setInput1] = useState("");
+    const [input2, setInput2] = useState("");
+    const [input3, setInput3] = useState("");
+    const [input4, setInput4] = useState("");
+
 
     // progress bar animation
     const [currentStep, setCurrentStep] = useState(0)
@@ -16,12 +23,60 @@ function FillDetails() {
         }
     }
     function handleNextClick() {
+
         if (currentStep < 2) {
-            setCurrentStep(currentStep + 1);
+            if (workspaceName === "" || input1 === "" || input2 === "" || input3 === "" || input4 === "") {
+                if (workspaceName === "") {
+                    const ele = document.getElementById("workspaceName")
+                    ele.style.border = "solid 2px red";
+                }
+
+                if (input1 === "") {
+                    const ele = document.getElementById("input1")
+                    ele.style.border = "solid 2px red";
+                }
+
+                if (input2 === "") {
+                    const ele = document.getElementById("input2")
+                    ele.style.border = "solid 2px red";
+                }
+
+                if (input3 === "") {
+                    const ele = document.getElementById("input3")
+                    ele.style.border = "solid 2px red";
+                }
+
+                if (input4 === "") {
+                    const ele = document.getElementById("input4")
+                    ele.style.border = "solid 2px red";
+                }
+            }
+            else {
+                setCurrentStep(currentStep + 1);
+            }
+
         }
     }
 
+    function changeBorderColor(ele) {
+        console.log(ele)
+        ele.style.border = "";
+    }
 
+
+    // enable next button on filling details
+    useEffect(() => {
+        const ele = document.getElementById("nextbtn")
+        if (workspaceName !== "" && input1 !== "" && input2 !== "" && input3 !== "" && input4 !== "") {
+            ele.style.opacity = 1;
+        }
+        else {
+            ele.style.opacity = 0.2;
+        }
+    }, [workspaceName, input1, input2, input3, input4]);
+
+
+    // progress bar animation
     useEffect(() => {
         const c1 = document.querySelector('.step1-circle');
         const c2 = document.querySelector('.step2-circle');
@@ -89,6 +144,8 @@ function FillDetails() {
 
     async function checkAvaiablity() {
 
+        const nameEle = document.getElementById("workspaceName")
+
 
         setisCheckLoading(1)
         setShowCheckBtn(0)
@@ -96,12 +153,80 @@ function FillDetails() {
         setTimeout(() => {
             setShowCheckBtn(0)
             setisCheckLoading(0)
-            setCheckMsgtext("WorkSpace name avaiable")
+            setCheckMsgtext("WorkSpace name available")
             setshowCheckMsg(1)
-            const ele_p = document.querySelector(".idMSG")
-            console.log(ele_p)
+
+            setTimeout(() => {
+                const ele_p = document.querySelector(".idMSG")
+                ele_p.style.color = "green";
+            }, 1);
+            nameEle.classList.add("greenh")
+
         }, 2000)
     }
+
+    //select plan
+
+    const [selectedPlan, setSelectedPlan] = useState(0)
+
+    function handleSelect(plan) {
+        const plan1 = document.querySelector('.selectBox1');
+        const plan2 = document.querySelector('.selectBox2');
+        const plan3 = document.querySelector('.selectBox3');
+
+        if (plan == 1) {
+            setSelectedPlan(1)
+            plan1.style.background = "#6F36FF";
+            plan1.style.border = "solid 2px white";
+            plan1.style.boxShadow = "0px 0px 0px 2px black";
+
+            plan2.style.background = "white";
+            plan2.style.border = "solid 2px black";
+            plan2.style.boxShadow = "0px 0px 0px 0px black";
+
+            plan3.style.background = "white";
+            plan3.style.border = "solid 2px black";
+            plan3.style.boxShadow = "0px 0px 0px 0px black";
+        }
+        // else if (plan == 2) {
+        //     plan2.style.background = "#6F36FF";
+        //     plan2.style.border = "solid 2px white";
+        //     plan2.style.boxShadow = "0px 0px 0px 2px black";
+
+        //     plan1.style.background = "white";
+        //     plan1.style.border = "solid 2px black";
+        //     plan1.style.boxShadow = "0px 0px 0px 0px black";
+
+        //     plan3.style.background = "white";
+        //     plan3.style.border = "solid 2px black";
+        //     plan3.style.boxShadow = "0px 0px 0px 0px black";
+        // }
+        // else if (plan == 3) {
+        //     plan3.style.background = "#6F36FF";
+        //     plan3.style.border = "solid 2px white";
+        //     plan3.style.boxShadow = "0px 0px 0px 2px black";
+
+        //     plan2.style.background = "white";
+        //     plan2.style.border = "solid 2px black";
+        //     plan2.style.boxShadow = "0px 0px 0px 0px black";
+
+        //     plan1.style.background = "white";
+        //     plan1.style.border = "solid 2px black";
+        //     plan1.style.boxShadow = "0px 0px 0px 0px black";
+        // }
+
+    }
+
+    // enable button
+    useEffect(() => {
+        const ele = document.getElementById("nextbtn")
+        if (selectedPlan == 0) {
+            ele.style.opacity = 0.2;
+        }
+        else {
+            ele.style.opacity = 1;
+        }
+    }, [selectedPlan]);
 
 
 
@@ -128,7 +253,7 @@ function FillDetails() {
                         <div className="step3-txt txt"><p>Finish</p></div>
                     </div>
                 </div>
-                <button onClick={() => { handleNextClick() }}>Next</button>
+
             </div>
             <div className="body-ctn">
                 {currentStep == 0 ?
@@ -141,12 +266,12 @@ function FillDetails() {
                             <div className="row1-ctn row">
                                 <div className="input-ctn">
                                     <div className="lable">WorkSpace Name</div>
-                                    <input type="text" placeholder='Workspace Name' />
+                                    <input id='workspaceName' type="text" placeholder='Workspace Name' onChange={(e) => { setWorkspaceName(e.target.value) }} value={workspaceName} />
                                 </div>
                                 <div className="checkbtn-ctn">
                                     {showCheckBtn ?
                                         <div className="namecheck-btn" onClick={() => { checkAvaiablity() }}>
-                                            <p>Check name avaiablity</p>
+                                            <p>Check name availablity</p>
                                         </div> : <></>}
 
                                     {showCheckMsg ?
@@ -166,29 +291,64 @@ function FillDetails() {
                             <div className="row2-ctn row">
                                 <div className="input-ctn">
                                     <div className="lable">college Name</div>
-                                    <input type="text" placeholder='College Name' />
+                                    <input id='input1' type="text" placeholder='College Name' onChange={(e) => { setInput1(e.target.value); changeBorderColor(e.target) }} value={input1} />
                                 </div>
                                 <div className="input-ctn">
                                     <div className="lable">Phone number</div>
-                                    <input type="text" placeholder='Phone number' />
+                                    <input id='input2' type="text" placeholder='Phone number' onChange={(e) => { setInput2(e.target.value); changeBorderColor(e.target) }} value={input2} />
                                 </div>
                             </div>
                             <div className="row3-ctn row">
                                 <div className="input-ctn">
                                     <div className="lable">Address</div>
-                                    <input type="text" placeholder='Address' />
+                                    <input id='input3' type="text" placeholder='Address' onChange={(e) => { setInput3(e.target.value); changeBorderColor(e.target) }} value={input3} />
                                 </div>
                                 <div className="input-ctn">
                                     <div className="lable">Phone number</div>
-                                    <input type="text" placeholder='Colloge Name' />
+                                    <input id='input4' type="text" placeholder='Colloge Name' onChange={(e) => { setInput4(e.target.value); changeBorderColor(e.target) }} value={input4} />
                                 </div>
                             </div>
                         </div>
 
 
                     </div> : <></>}
+                {currentStep == 1 ? <div className="selectPlan">
+                    <div className="title">
+                        <p>Select your Plan</p>
+                    </div>
+                    <div className="body">
+                        <div className="planBox" onClick={() => { handleSelect(1) }}>
+                            <div className="planSelect"><div className="select selectBox1"></div></div>
+                            <div className="planName"><p className='plan1'>Free</p></div>
+                            <div className="planPrice"><p className="rate">$0</p><p className="year">/ year</p></div>
+                            <div className="planDesc"><p>Limited Resource (512Mb space), Upto 1000 users, Access 100 users at same time</p></div>
+                        </div>
+                        <div className="planBox planBox2" onClick={() => { handleSelect(2) }}>
+                            <div className="planHide"><p>Currently Unavailable</p></div>
+                            <div className="planSelect"><div className="select selectBox2"></div></div>
+                            <div className="planName"><p className='plan2'>Pro</p></div>
+                            <div className="planPrice"><p className="rate">$60</p><p className="year">/ year</p></div>
+                            <div className="planDesc"><p>Limited Resource (1GB space), Upto 2000 users, Access 200 users at same time</p></div>
+                        </div>
+                        <div className="planBox planBox3" onClick={() => { handleSelect(3) }}>
+                            <div className="planHide"><p>Currently Unavailable</p></div>
+                            <div className="planSelect"><div className="select selectBox3"></div></div>
+                            <div className="planName"><p className='plan3'>Pro +</p></div>
+                            <div className="planPrice"><p className="rate">$120</p><p className="year">/ year</p></div>
+                            <div className="planDesc"><p>Unlimited Resource, Unlimited user accounts, Up to 500 users can access at a same time.</p></div>
+                        </div>
+                    </div>
+                </div> : <></>}
+                {currentStep == 2 ? <div className="confirm">
+                    <div className="title">
+                        <p>Conform your Details</p>
+                    </div>
+                    <div className="body">
+                        
+                    </div>
+                </div> : <></>}
                 <div className="nextbtn-ctn">
-                    <div className="nextbtn" onClick={() => { handleNextClick() }}>
+                    <div id='nextbtn' className="nextbtn" onClick={() => { handleNextClick() }}>
                         <p>Next</p><GrLinkNext className='icon' />
                     </div>
                 </div>
