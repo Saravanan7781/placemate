@@ -1,0 +1,54 @@
+.companiesMain {
+    height: 90vh;
+    width: 90vw;
+    background-color: rgb(160, 160, 247);
+    border-radius: 1.4rem;
+}
+
+.companiesTitle {
+    height: 10%;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+
+}
+
+.companiesTitle h1 {
+    margin-left: 2%;
+
+}
+
+.companiesAvailable {
+    height: 90%;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+.SingleCompanyDetail {
+    display: grid;
+    grid-template-columns: .5fr repeat(3, 1fr) .5fr;
+    height: calc(70vh - 10px);
+    width: 100%;
+    align-items: center;
+}
+
+.companyDetailList {
+    height: 20%;
+    width: 100%;
+}
+
+.companyImage,
+.companyName,
+.companyDesc,
+.companyLocation,
+.companyAvgStudentsPlaced,
+.companyTitleLogo,
+.companyTitleName,
+.companyTitleDesc,
+.companyTitleLocation,
+.companyTitleAvgStudentsPlaced {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
