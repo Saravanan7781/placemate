@@ -18,9 +18,9 @@ function ShowAllCompanies() {
           <div className="companyTitleName">
             <p>Name</p>
           </div>
-          <div className="companyTitleDesc">
+          {/* <div className="companyTitleDesc">
             <p>Description</p>
-          </div>
+          </div> */}
           <div className="companyTitleLocation">
             <p>Location</p>
           </div>

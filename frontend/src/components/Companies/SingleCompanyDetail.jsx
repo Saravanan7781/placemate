@@ -11,9 +11,9 @@ function SingleCompanyDetail({ company }) {
       <div className="companyName">
         <p>{name}</p>
       </div>
-      <div className="companyDesc">
+      {/* <div className="companyDesc">
         <p>{desc}</p>
-      </div>
+      </div> */}
       <div className="companyLocation">
         <p>{location}</p>
       </div>

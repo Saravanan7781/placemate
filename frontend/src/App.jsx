@@ -1,5 +1,10 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  BrowserRouter as Router,
+  useLocation,
+} from 'react-router-dom';
 import RegisterCompany from './components/RegisterCompany/RegisterCompany';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -11,38 +16,45 @@ import Profile from './pages/Profile';
 import AllUsers from './pages/AllUsers';
 import ShowAllCompanies from './components/Companies/ShowAllCompanies';
 
-function App() {
+function AppContent() {
+  const location = useLocation();
+
+  // Hide sidebar for these routes
+  const hideSidebarRoutes = ['/login', '/setup', '/'];
+  const shouldHideSidebar = hideSidebarRoutes.includes(location.pathname);
+
   return (
     <div className="mainApp">
-      <Router>
-        <Routes>
-          <Route
-            path="/registerCompany"
-            element={
-              <>
-                <RegisterCompany />
-                <Sidebar />
-              </>
-            }
-          ></Route>
-          <Route
-            path="/home"
-            element={
-              <>
-                <Home /> <Sidebar /> <Chatbot />
-              </>
-            }
-          ></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/" element={<LandingPage />}></Route>
-          {/* <Route path="/register" element={<Register />}></Route> */}
-          <Route path="/profile" element={<Profile />}></Route>
-          <Route path="/users" element={<AllUsers />}></Route>
-          <Route path="/setup" element={<AdminSetup />}></Route>
-          <Route path="/companies" element={<ShowAllCompanies />}></Route>
-        </Routes>
-      </Router>
+      {/* Conditionally render Sidebar */}
+      {!shouldHideSidebar && <Sidebar />}
+
+      <Routes>
+        <Route path="/registerCompany" element={<RegisterCompany />} />
+        <Route
+          path="/home"
+          element={
+            <>
+              <Home />
+              <Chatbot />
+            </>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/users" element={<AllUsers />} />
+        <Route path="/setup" element={<AdminSetup />} />
+        <Route path="/companies" element={<ShowAllCompanies />} />
+      </Routes>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 

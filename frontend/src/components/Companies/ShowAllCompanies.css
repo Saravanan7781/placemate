@@ -27,7 +27,7 @@
 
 .SingleCompanyDetail {
     display: grid;
-    grid-template-columns: .5fr repeat(3, 1fr) .5fr;
+    grid-template-columns: .3fr repeat(2, 1fr) .5fr;
     height: calc(70vh - 10px);
     width: 100%;
     align-items: center;

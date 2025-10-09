@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './AllUsersComponent.css';
 import AllUsersList from './AllUsersList';
-// import * as XLSX from 'xlsx';
+import * as XLSX from 'xlsx';
 import { FileSpreadsheet } from 'lucide-react';
 // import AllUsersProfileExpansion from './AllUsersProfileExpansion';
+import axios from 'axios';
 
 function AllUsersComponent() {
+  const URL = import.meta.env.VITE_API_URL;
   const [users, setUsers] = useState([]);
 
   const handleExcelUpload = (e) => {
@@ -25,6 +27,17 @@ function AllUsersComponent() {
     };
 
     reader.readAsBinaryString(file);
+  };
+
+  const uploadAllUsersToServer = async () => {
+    try {
+      console.log('called ');
+      const response = await axios.post(`${URL}/allUsers/addUsers`, {
+        users: { users },
+      });
+    } catch (err) {
+      console.log('error occurred ' + err.message);
+    }
   };
 
   return (
@@ -47,6 +60,9 @@ function AllUsersComponent() {
             style={{ display: 'none' }}
           />
           <FileSpreadsheet />
+        </label>
+        <label className="AllUsersSectionUserUpload">
+          <button onClick={uploadAllUsersToServer}>Upload to Server</button>
         </label>
       </div>
 

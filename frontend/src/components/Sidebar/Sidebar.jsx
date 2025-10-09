@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import '../Sidebar/Sidebar.css';
-import { Target, Inbox, LogOut } from 'lucide-react';
+import {
+  Target,
+  Inbox,
+  LogOut,
+  House,
+  CircleUser,
+  UserRoundPen,
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const handleSidebarToggle = () => {
-    console.log('toggled');
+    // console.log('toggled');
     setShowSidebar((showSidebar) => !showSidebar);
   };
 
@@ -27,7 +35,7 @@ function Sidebar() {
         <div className="sidebarSecondPart">
           <div className="sidebarSecondPartFirstOne">
             <div className="sidebarSecondPartItem sidebarSecondPartItem1">
-              <Inbox size={28} />
+              <House size={28} />
               {/* <p>Inbox</p> */}
             </div>
             <div
@@ -35,7 +43,9 @@ function Sidebar() {
                 showSidebar ? `sidebarSecondPartFirstOneParaShow` : ``
               }`}
             >
-              <p>Dashboard</p>
+              <p>
+                <Link to="/home">Home</Link>
+              </p>
             </div>
           </div>
           <div className="sidebarSecondPartSecondOne">
@@ -47,23 +57,41 @@ function Sidebar() {
                 showSidebar ? `sidebarSecondPartSecondOneParaShow` : ``
               }`}
             >
-              <p>User creation</p>
+              <p>
+                <Link to="/companies">Companies</Link>
+              </p>
             </div>
           </div>
           <div className="sidebarSecondPartThirdOne">
             <div className="sidebarSecondPartItem sidebarSecondPartItem3">
-              <Inbox size={28} />
+              <UserRoundPen size={28} />
             </div>
             <div
               className={`sidebarSecondPartThirdOnePara ${
                 showSidebar ? `sidebarSecondPartThirdOneParaShow` : ``
               }`}
             >
-              <p>Companies</p>
+              <p>
+                <Link to="/users">Users</Link>
+              </p>
             </div>
           </div>
         </div>
         <div className="sidebarThirdPart">
+          <div className="sidebarSecondPartThirdOneRenowned">
+            <div className="sidebarSecondPartItem sidebarSecondPartItem3">
+              <CircleUser size={28} />
+            </div>
+            <div
+              className={`sidebarSecondPartThirdOnePara ${
+                showSidebar ? `sidebarSecondPartThirdOneParaShow` : ``
+              }`}
+            >
+              <p>
+                <Link to="/profile">Profile</Link>
+              </p>
+            </div>
+          </div>
           <div className="sidebarThirdPartFirstOne">
             <div className="sidebarThirdPartItem1">
               <LogOut />
@@ -74,7 +102,9 @@ function Sidebar() {
               }`}
             >
               {/* For students profile, for admins logout */}
-              <p>Logout</p>
+              <p>
+                <Link to="/login">Logout</Link>
+              </p>
             </div>
           </div>
         </div>

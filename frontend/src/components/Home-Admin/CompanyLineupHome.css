@@ -33,6 +33,7 @@
     height: 25%;
     width: 100%;
     /* border: 2px solid black; */
+    border-bottom: 1px solid black;
     border-radius: 5ch;
     cursor: pointer;
     display: flex;
